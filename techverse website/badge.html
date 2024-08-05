@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techverse51</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script> 
+    </script>
+</head>
+
+  <body class="bg-gray-900 text-gray-400 body-font">
+    
+    <center><h1 id="welcome" data-aos="flip-down" class="text-4xl font-bold  mb-4 my-5"><a href="./index.html" >Techverse51 badge</a></h1></center>
+
+  <!-- badge  -->
+
+  <div id="confetti-container">
+
+    <div id="wrapper">
+        <div class="row justify-content-center align-items-center" id="card-wrapper">
+            <div id="card" class="bg-card-texture"
+                style="background-color: white; border-radius: 20px; text-align: center; padding: 10px; padding-top: 20px;">
+            <center>    <img class="align-items-center justify-content-center" id="photo" src="./images/Blue White Modern Laundry Business Logo (1).png"></center>
+                <h1 style="font-size: large; font-weight: 500; display:none; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: rgb(17 24 39); z-index: index 10; margin-top: 10px;"
+                    id="certificate-title">Congratulations on completing <br> Create your own Gpts Webinar 🚀</h1>
+
+                <div id="tech-branding">
+                    <hr style="color: rgb(17 24 39); height: 2px;"><br>
+                    <div class="brand-sec">
+                        <img id="tech-logo" class="logo"
+                            src="./images/logo.jpg" />
+                        <span class="brand-name" style="color: rgb(17 24 39);">Techverse51 Digital Badge</span>
+                    </div>
+                    <p id="name" style="color: rgb(17 24 39); font-weight: 600;">Name</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <center>
+        <form>
+            <div class="form-group">
+                <label for="inputname">Name</label><br><br>
+                <input id="inputname" class="form-control w-50 bg-gray-400" type="text" placeholder="Enter Name" required
+                    oninput="loadName(event)">
+                <small id="namehelp" class="form-text text-muted ">Please provide your full name as it will appear on
+                    your badge.</small>
+                <br><br>
+            </div>
+
+
+            <div class="form-group">
+                <label for="inputphoto">Photo</label><br><br>
+                <input id="inputphoto" class="form-control w-50 bg-gray-400" type="file" placeholder="Enter your photo" required
+                    onchange=loadFile(event)>
+                <small id="photohelp" class="form-text text-muted">Please provide a photograph of yourself in JPEG
+                    or PNG formats.</small>
+                <br><br>
+            </div>
+        </form>
+        </center>
+
+        <!-- Download button  -->
+        <div class="text-center mb-3">
+            <button class="btn btn-block text-gray-300 text-xl mb-6" style="background: linear-gradient(to right bottom, rgb(124, 124, 250), rgba(219, 1, 219, 0.637));" type="submit" onclick="downloadImg()">Download Your
+                Badge</button>
+        </div>
+    </div>
+
+    <div class="w-100 p-3"></div>
+  
+  <!-- bot  -->
+
+  <iframe id="botFrame"
+  src="https://copilotstudio.microsoft.com/environments/Default-33646cae-cc1b-4724-85db-8f9de033b34c/bots/cr510_copilotX3w3UQ/webchat?__version__=2&theme=default"
+  frameborder="0"></iframe>
+
+<div class="button-container">
+  <button id="mode" onclick="toggleIframe()">
+    <img src="./images/logo.jpg" alt="Bot Icon">
+  </button>
+</div>
+
+<!-- footer  -->
+<footer class="text-gray-400 bg-gray-900 body-font text-4xl">
+    <h3 class=" text-center text-gray-400">Socials</h3>
+    <div class="text-center m-6">
+      <a  href="https://www.linkedin.com/company/techverse51/" target="_blank"> 
+        <i data-aos="fade-right" class="a fa-brands fa-linkedin"
+          style="color: #345183;"></i></a>
+      <a  href="https://www.youtube.com/@Techverse_51" target="_blank"> 
+        <i data-aos="flip-left" class="a fa-brands fa-youtube"
+          style="color: #345183;"></i></a>
+      <a  href="mailto:techverse51@gmail.com" target="_blank">
+        <i data-aos="fade-left"class="fa-solid fa-envelope"
+          style="color: #345183;"></i></a>
+    </div>
+  </footer>
+
+
+  <!-- copyright  -->
+  <div class="lastfooter text-gray-400 bg-gray-700 text-center">
+    <div>
+      <i class="fa fa-copyright" aria-hidden="true"> 2024</i>
+      <a href="https://www.linkedin.com/company/techverse51/" target="_blank"
+        class="text-gray-400 hover:text-gray-300">Techverse51</a>
+    </div>
+    <div class="text-center">Made by <a href="https://www.linkedin.com/in/abeera-u-4377a8296/" target="_blank"> ABEERA
+        UMAIR</a></div>
+  </div>
+
+
+  <!-- script  -->
+  <script src="main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

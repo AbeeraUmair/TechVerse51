@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techverse51</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- header  -->
+  <header class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+        <img class="logo" src="./images/logo.jpg" alt="our logo">
+        <span data-aos="zoom-in" class="logo ml-3 text-xl">Techverse51</span>
+      </a>
+      <nav class="md:ml-auto mx-5 px-4 md:mr-auto flex flex-wrap items-center text-xl  justify-center">
+        <a data-aos="zoom-in" href="/index.html" class="mr-5 hover:text-white">Home</a>
+        <a data-aos="zoom-in" href="/about.html" class="mr-5 hover:text-white">About</a>
+        <a data-aos="zoom-in" href="/badge.html" class="mr-5 hover:text-white">Badge</a>
+        <a data-aos="zoom-in" href="/contact.html" class="mr-5 hover:text-white">Contact Us</a>
+      </nav>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtkrhSDl7lzCjGNCgB-avALPjQU94bEJu6y9cHyayL_M6xhw/viewform?pli=1"
+        target="_blank"> <button data-aos="zoom-in"
+          class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Register
+          Now
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button></a>
+    </div>
+  </header>
+
+  <!-- hero section -->
+  <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex px-5 py-14 items-center justify-center flex-col">
+      <img data-aos="zoom-out-right" class="img-hero a lg:w-1/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
+        alt="hero" src="./images/logo.jpg">
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 id="welcome" data-aos="flip-down" class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Techverse51</h1>
+        <p class="leading-relaxed mb-8">Techverse51 is a community uniting developers worldwide, offering a
+          collaborative platform for learning and innovation.</p>
+        <div class="flex justify-center">
+          <a href="https://www.linkedin.com/company/techverse51/" target="_blank"> <button
+              class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Explore</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- bot  -->
+
+  <iframe id="botFrame"
+    src="https://copilotstudio.microsoft.com/environments/Default-33646cae-cc1b-4724-85db-8f9de033b34c/bots/cr510_copilotX3w3UQ/webchat?__version__=2&theme=default"
+    frameborder="0"></iframe>
+
+  <div class="button-container">
+    <button id="mode" onclick="toggleIframe()">
+      <img src="./images/logo.jpg" alt="Bot Icon">
+    </button>
+  </div>
+
+  <!-- our team  -->
+
+  <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="a text-2xl font-medium title-font text-white">OUR TEAM</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">At Techverse51, our success is driven by a group of passionate and talented individuals. Each member of our team brings unique skills and experiences to the table, working collaboratively to deliver exceptional results for our clients.</p>
+      </div>
+
+      <div class="main-grid">
+        <div class="team-image-container"><img data-aos="fade-right" id="team-image" src="./images/girl.png">
+          <div class="image-info-container">
+            <div class="team-tag-container">
+              <h3 class="team-name text-gray-500 my-4 text-center">Faryal Maqbool</h3>
+              <p class="mb-4 text-center">Founder <br>
+              Founder of @Techverse51 | Microsoft Copilot Developer | Cloud
+                Generative AI Program | Next.Js | Chatbot Developer |</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-image-container"><img data-aos="flip-left" id="team-image" src="./images/Yasir meraj.jpg">
+          <div class="image-info-container">
+            <div class="team-tag-container">
+              <h3 class="team-name text-gray-500 my-4 text-center">Yasir Meraj</h3>
+              <p class="mb-4 text-center">Co-Founder TechVerse51<br>
+              Data Architect | Cloud DBA | Data Migration Expert | Oracle Apps DBA |
+                Oracle RAC | Oracle Data Guard | DevOps | Data Engineer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-image-container"><img data-aos="fade-left" id="team-image" src="./images/sharoon.jpg">
+          <div class="image-info-container">
+            <div class="team-tag-container">
+              <h3 class="team-name text-gray-500 my-4 text-center">Sharoon Masih</h3>
+              <p class="mb-4 text-center">Co-Founder TechVerse51<br>
+             Front-end Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-image-container"><img data-aos="fade-right" id="team-image" src="./images/Abdullah.jpg">
+          <div class="image-info-container">
+            <div class="team-tag-container">
+              <h3 class="team-name text-gray-500 my-4 text-center">Abdullah Javed</h3>
+              <p class="mb-4 text-center">Management<br>
+             Web Developer | Expert in NodeJs | TypeScript | JavaScript |
+                GenerativeAI</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-image-container"><img data-aos="flip-left" id="team-image" src="./images/abdul_rehman.jpg">
+          <div class="image-info-container">
+            <div class="team-tag-container">
+              <h3 class="team-name text-gray-500 my-4 text-center">Abdul Rehman</h3>
+              <p class="mb-4 text-center">Management<br>
+              Full-Stack Developer || React & Next.js Expert || JavaScript &
+                TypeScript</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-image-container"><img data-aos="fade-left" id="team-image" src="/images/haisam.jpg">
+          <div class="image-info-container">
+            <div class="team-tag-container">
+              <h3 class="team-name text-gray-500 my-4 text-center">Syed Muhammad Haisam</h3>
+              <p class="mb-4 text-center">Management<br>
+              Aspiring Web Developer | Web 3.0 Enthusiast | Blockchain Explorer |
+                Designing the Metaverse Future</p>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="team-image-container"><img data-aos="fade-right" id="team-image" src="./images/Shahab.jpg">
+          <div class="image-info-container">
+            <div class="team-tag-container">
+              <h3 class="team-name text-gray-500 my-4 text-center">Shahab-ud-din</h3>
+              <p class="mb-4 text-center">Lecturer Typescript<br>
+              Front-end Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-image-container"><img data-aos="flip-left" id="team-image" src="./images/girl.png">
+          <div class="image-info-container">
+            <div class="price-tag-container">
+              <h3 class="team-name text-gray-500 my-4 text-center">Abeera Umair</h3>
+              <p class="mb-4 text-center">Lecturer Html/CSS<br>
+              Front-end Developer | NEXT.JS | Chatbot Developer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-image-container"><img data-aos="fade-left" id="team-image" src="./images/girl.png">
+          <div class="image-info-container">
+            <div class="team-tag-container">
+              <h3 class="team-name text-gray-500 my-4 text-center">Nida Rizwan</h3>
+              <p class="mb-4 text-center">Lecturer Html/CSS<br>
+              Cloud Generative AI</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </section>
+
+  <!-- footer  -->
+  <footer class="text-gray-400 bg-gray-900 body-font text-4xl">
+    <h3 class=" text-center text-gray-400">Socials</h3>
+    <div class="text-center m-6">
+      <a  href="https://www.linkedin.com/company/techverse51/" target="_blank"> 
+        <i data-aos="fade-right" class="a fa-brands fa-linkedin"
+          style="color: #345183;"></i></a>
+      <a  href="https://www.youtube.com/@Techverse_51" target="_blank"> 
+        <i data-aos="flip-left" class="a fa-brands fa-youtube"
+          style="color: #345183;"></i></a>
+      <a  href="mailto:techverse51@gmail.com" target="_blank">
+        <i data-aos="fade-left"class="fa-solid fa-envelope"
+          style="color: #345183;"></i></a>
+    </div>
+  </footer>
+
+
+  <!-- copyright  -->
+  <div class="lastfooter text-gray-400 bg-gray-700 text-center">
+    <div>
+      <i class="fa fa-copyright" aria-hidden="true"> 2024</i>
+      <a href="https://www.linkedin.com/company/techverse51/" target="_blank"
+        class="text-gray-400 hover:text-gray-300">Techverse51</a>
+    </div>
+    <div class="text-center">Made by <a href="https://www.linkedin.com/in/abeera-u-4377a8296/" target="_blank"> ABEERA
+        UMAIR</a></div>
+  </div>
+
+
+  <!-- script  -->
+  <script src="main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

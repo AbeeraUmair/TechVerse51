@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techverse51</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- header  -->
+  <header class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+        <img class="logo" src="./images/logo.jpg" alt="our logo">
+        <span data-aos="zoom-in" class="logo ml-3 text-xl">Techverse51</span>
+      </a>
+      <nav class="md:ml-auto mx-5 px-4 md:mr-auto flex flex-wrap items-center text-xl  justify-center">
+        <a data-aos="zoom-in" href="/index.html" class="mr-5 hover:text-white">Home</a>
+        <a data-aos="zoom-in" href="/about.html" class="mr-5 hover:text-white">About</a>
+        <a data-aos="zoom-in" href="/badge.html" class="mr-5 hover:text-white">Badge</a>
+        <a data-aos="zoom-in" href="/contact.html" class="mr-5 hover:text-white">Contact Us</a>
+      </nav>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtkrhSDl7lzCjGNCgB-avALPjQU94bEJu6y9cHyayL_M6xhw/viewform?pli=1"
+        target="_blank"> <button data-aos="zoom-in"
+          class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Register
+          Now
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button></a>
+    </div>
+  </header>
+
+
+  <!-- contact  -->
+
+  <section class="text-gray-400 bg-gray-900 body-font relative">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white" data-aos="flip-down" id="welcome">Stay Informed with TechVerse51</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            <p>We value your input! Please provide your details to receive future TechVerse reports and updates.</p>
+        </p>
+      </div>
+      <div class="lg:w-1/2 md:w-2/3 mx-auto">
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 w-1/2">
+            <div id="contact-form" class="relative">
+              <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
+              <input type="text" id="name" name="name" required
+                class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+              <input type="email" id="email" name="email" required
+                class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label id="message" for="message" class="leading-7 text-sm text-gray-400">Message</label>
+              <textarea id="message" name="message" required
+                class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <a href=""> <button onclick="submit()"
+                class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- bot  -->
+
+  <iframe id="botFrame"
+    src="https://copilotstudio.microsoft.com/environments/Default-33646cae-cc1b-4724-85db-8f9de033b34c/bots/cr510_copilotX3w3UQ/webchat?__version__=2&theme=default"
+    frameborder="0"></iframe>
+
+  <div class="button-container">
+    <button id="mode" onclick="toggleIframe()">
+      <img src="/images/logo.jpg" alt="Bot Icon">
+    </button>
+  </div>
+
+  <!-- footer  -->
+  <footer class="text-gray-400 bg-gray-900 body-font text-4xl">
+    <h3 class=" text-center text-gray-400">Socials</h3>
+    <div class="text-center m-6">
+      <a  href="https://www.linkedin.com/company/techverse51/" target="_blank"> 
+        <i data-aos="fade-right" class="a fa-brands fa-linkedin"
+          style="color: #345183;"></i></a>
+      <a  href="https://www.youtube.com/@Techverse_51" target="_blank"> 
+        <i data-aos="flip-left" class="a fa-brands fa-youtube"
+          style="color: #345183;"></i></a>
+      <a  href="mailto:techverse51@gmail.com" target="_blank">
+        <i data-aos="fade-left" class="fa-solid fa-envelope"
+          style="color: #345183;"></i></a>
+    </div>
+  </footer>
+
+  <!-- copyright  -->
+  <div class="lastfooter text-gray-400 bg-gray-700 text-center text-sm">
+    <div>
+      <i class="fa fa-copyright" aria-hidden="true"> 2024</i>
+      <a href="https://www.linkedin.com/company/techverse51/" target="_blank"
+        class="text-gray-400 hover:text-gray-300">Techverse51</a>
+    </div>
+    <div class="text-center">Made by <a href="https://www.linkedin.com/in/abeera-u-4377a8296/" target="_blank"> ABEERA
+        UMAIR</a></div>
+  </div>
+  
+  <script src="main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
